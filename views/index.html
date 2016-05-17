@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <base href="/">
+
+    <title>Biketori</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js"></script>
+    <script src="../node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="../node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="../node_modules/systemjs/dist/system.src.js"></script>
+    <script src="../node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="../node_modules/angular2/bundles/angular2.dev.js"></script>
+    <!-- Tuon alla pitäisi toimia...? ->
+    <script src="scripts/angular2/bundles/angular2.dev.js"></script>
+    <script src="../node_modules/angular2/bundles/router.dev.js"></script-->
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills (from CDN), in this exact order -->
+    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.25/system-polyfills.js"></script>
+    <script src="https://npmcdn.com/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.14/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.14/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.14/angular2.dev.js"></script-->
+
+    <!-- 1. Load libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE required polyfills (from CDN), in this exact order -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.0/es6-shim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.25/system-polyfills.js"></script>
+    <script src="https://npmcdn.com/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.14/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.14/Rx.js"></script>
+    <!--script src="../node_modules/rxjs/bundles/Rx.js"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.14/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.14/angular2.dev.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.14/router.dev.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.14/http.dev.js"></script>
+
+
+    <!--script src="../node_modules/angular2/bundles/http.dev.js"></script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/2.0.0-beta.14/http.dev.js"></script>
+
+    <!--script src="javascripts/jquery.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script-->
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+    <!-- HUOM joku kikka development ympärstöön ks. angular 2 docs routing-->
+    <script>document.write('<base href="' + document.location + '" />');</script>
+
+    <!--link href="stylesheets/bootstrap.min.css" rel="stylesheet"-->
+    <!--link href="stylesheets/portfolio-item.css" rel="stylesheet"-->
+    <!--script>
+        System.config({
+            packages: {
+                app: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('../public/js/main')
+                .then(null, console.error.bind(console));
+    </script-->
+    <script>
+        System.config({
+            transpiler: 'typescript',
+            typescriptOptions: { emitDecoratorMetadata: true },
+            packages: {'app': {defaultExtension: 'js'}}
+        });
+        System.import('../public/js/main.ts')
+                .then(null, console.error.bind(console));
+    </script>
+</head>
+<body>
+<biketori-app>Loading...</biketori-app>
+</body>
+</html>
